@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#green-space{
+    background-color: #128C7E;
+    height: 20vh;
+    width: 100%;
+}
+
+.center{
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: #FFF;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table, th, td{
+    border: 1px solid #000;
+}
