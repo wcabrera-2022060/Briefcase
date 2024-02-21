@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="http://fonts.cdnfonts.com/css/sf-pixelate" rel="stylesheet">
+    <link rel="icon" href="IMG/Icono.png">
+    
+    <title>Ahorcado</title>
+</head>
+
+<body>
+    <h1>Ahorcado</h1>
+    <p>Selecciona una letra para adivinar la palabra</p>
+    <p>Oportunidades restantes: <span id="oportunidades">7</span></p>
+    <p>Letras Usadas: <span id="letrasUsadas"></span></p>
+    <p id="palabraEscondida"></p>
+    <canvas id="graficoAhorcado" width="200" height="200"></canvas>
+    <p id="mensaje"></p>
+    <button id="reiniciar" style="display: none;" onclick="reiniciarJuego();">Jugar de Nuevo</button>    
+
+    <div class="Teclado" id="Teclado">
+        <div class="fila">
+            <button class="Tecla" data-letter="q" onclick="letraNueva('q')">Q</button>
+            <button class="Tecla" data-letter="w" onclick="letraNueva('w')">W</button>
+            <button class="Tecla" data-letter="e" onclick="letraNueva('e')">E</button>
+            <button class="Tecla" data-letter="r" onclick="letraNueva('r')">R</button>
+            <button class="Tecla" data-letter="t" onclick="letraNueva('t')">T</button>
+            <button class="Tecla" data-letter="y" onclick="letraNueva('y')">Y</button>
+            <button class="Tecla" data-letter="u" onclick="letraNueva('u')">U</button>
+            <button class="Tecla" data-letter="i" onclick="letraNueva('i')">I</button>
+            <button class="Tecla" data-letter="o" onclick="letraNueva('o')">O</button>
+            <button class="Tecla" data-letter="p" onclick="letraNueva('p')">P</button>
+        </div>
+        <div class="fila">
+            <button class="Tecla" data-letter="a" onclick="letraNueva('a')">A</button>
+            <button class="Tecla" data-letter="s" onclick="letraNueva('s')">S</button>
+            <button class="Tecla" data-letter="d" onclick="letraNueva('d')">D</button>
+            <button class="Tecla" data-letter="f" onclick="letraNueva('f')">F</button>
+            <button class="Tecla" data-letter="g" onclick="letraNueva('g')">G</button>
+            <button class="Tecla" data-letter="h" onclick="letraNueva('h')">H</button>
+            <button class="Tecla" data-letter="j" onclick="letraNueva('j')">J</button>
+            <button class="Tecla" data-letter="k" onclick="letraNueva('k')">K</button>
+            <button class="Tecla" data-letter="l" onclick="letraNueva('l')">L</button>
+            <button class="Tecla" data-letter="ñ" onclick="letraNueva('ñ')">Ñ</button>
+        </div>
+        <div class="fila">
+            <button class="Tecla" data-letter="z" onclick="letraNueva('z')">Z</button>
+            <button class="Tecla" data-letter="x" onclick="letraNueva('x')">X</button>
+            <button class="Tecla" data-letter="c" onclick="letraNueva('c')">C</button>
+            <button class="Tecla" data-letter="v" onclick="letraNueva('v')">V</button>
+            <button class="Tecla" data-letter="b" onclick="letraNueva('b')">B</button>
+            <button class="Tecla" data-letter="n" onclick="letraNueva('n')">N</button>
+            <button class="Tecla" data-letter="m" onclick="letraNueva('m')">M</button>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

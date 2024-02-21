@@ -1,0 +1,64 @@
+body{
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    color: #fff;
+    font-family: 'SF Pixelate', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Teclado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.Tecla{
+    /* Ancho y Alto de la tecla*/
+    width: 60px;
+    height: 60px;
+    /* Color de fondo de la tecla*/
+    background-color: rgb(44, 44, 44);
+    /* Redondea las esquina de la tecla*/
+    border-radius: 5px;
+    /* Tamaño de la letra*/
+    font-size: 20px;
+    /* Negrita al texto*/
+    font-weight: bold;
+    /* Borde de la tecla*/
+    border: 1px solid #ccc;
+    /* Sombra de la tecla*/
+    box-shadow: 0 10px 5px rgba(0, 0, 250, 0.4);
+    /* Margenes de la tecla*/
+    margin: 10px 3px 10px 3px;
+    cursor: pointer;
+}
+
+.Tecla:active:not([disabled]){
+    transform: translateY(5px);
+    box-shadow: 0 5px 2px rgba(0, 250, 0, 0.4);
+}
+
+.Tecla:disabled{
+    cursor: not-allowed;
+}
+
+#reiniciar{
+    appearance: none;
+    font-family: 'SF Pixelate', sans-serif;
+    border: none;
+    width: 300px;
+    padding: 10px;
+    background: #D95D39;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#letrasUsadas, p{
+    font-family: Arial, Helvetica, sans-serif;
+}
